@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2, .mb-4.small, form {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+<h2>Feedback</h2>
+<div class="mb-4 small">
+Please provide your feedback in the form below
+</div>
+<form name="feedback_form" id="feedback_form" method="post">
+Name: <input type=text>
+<br>
+Semester: <input type=text>
+<br>
+Branch: <input type=text>
+<br>
+<label>Will you recommend students to take ECE?</label>
+<div class="mb-3 d-flex flex-row py-1">
+  <div class="form-check mr-3">
+  <input class="form-check-input" type="radio" name="rating" id="rating_yes" value="yes">
+  <label class="form-check-label" for="rating_yes">
+    Yes
+  </label>
+  </div>
+
+  <div class="form-check mx-3">
+  <input class="form-check-input" type="radio" name="rating" id="rating_maybe" value="maybe">
+  <label class="form-check-label" for="rating_maybe">
+    Maybe
+  </label>
+  </div>
+
+  <div class="form-check mx-3">
+  <input class="form-check-input"  type="radio" name="rating" id="rating_no" value="no">
+  <label class="form-check-label" for="rating_no">
+    No
+  </label>
+  </div>
+</div>
+<div class="mb-4">
+  <label class="form-label"  for="feedback_Reason for you to recommend or not recommend ECEs">Reason for you to recommend or not recommend ECE:</label>
+  <textarea class="form-control" required rows="9" required columns="15" name="Reason for you to recommend or not recommend ECE" id="feedback_Reasons for you to recommend or not recommend ECE" ></textarea>
+</div>
+<div class="row">
+  <div class="col">
+<div class="mb-5">
+  <label class="form-label"  for="feedback_Does ECE have scope in core jobs according to you">Does ECE have scope in core jobs according to you:</label>
+  <textarea class="form-control" required rows="9" required columns="15"  name="Does ECE have scope in core jobs according to you" id="feedback_Does ECE have scope in core jobs according to you" ></textarea>
+</div>
+<div class="row">
+  <div class="col">
+
+<button type="submit" class="btn btn-success btn-lg" >Submit</button>
+</form>
+  </html>
